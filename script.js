@@ -84,7 +84,7 @@ const galaxyParameters = {
   outsideColor: new THREE.Color(0x48b8b8),
 };
 
-const defaultHeartImages = Array.from({ length: 2 }, (_, i) => `images/img${i + 1}.jpg`);
+const defaultHeartImages = Array.from({ length: 100 }, (_, i) => `images/img${i + 1}.jpg`);
 
 const heartImages = [
   ...(window.dataCCD?.data?.heartImages || []),
@@ -611,10 +611,10 @@ scene.add(planet);
 
 // ---- TẠO CÁC VÒNG CHỮ QUAY QUANH HÀNH TINH ----
 const ringTexts = [
-  'Việt Nam',
-  "Cao Chung Đạt",
-  "Nguyễn Ngọc Yến Nhi",
-  "20/03/2005",
+  'Nguyễn Thị Minh Châu',
+  "Anh yêu em",
+  "Định mệnh của đời anh",
+  "30/04/2025 - 01/05/2025",
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
 
